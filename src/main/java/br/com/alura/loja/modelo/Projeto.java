@@ -1,5 +1,7 @@
 package br.com.alura.loja.modelo;
 
+import java.util.Iterator;
+
 import com.google.gson.Gson;
 import com.thoughtworks.xstream.XStream;
 
@@ -38,7 +40,7 @@ public class Projeto {
 	public void setAno(int ano) {
 		this.ano = ano;
 	}
-	
+
 	public String toXML() {
 		return new XStream().toXML(this);
 	}
