@@ -1,15 +1,22 @@
 package br.com.alura.loja.modelo;
 
-import java.util.Iterator;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 import com.google.gson.Gson;
 import com.thoughtworks.xstream.XStream;
 
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Projeto {
 
 	private long id;
 	private String nome;
 	private int ano;
+	
+	Projeto() {
+	}
 
 	public Projeto(long l, String string, int i) {
 		this.id = l;
